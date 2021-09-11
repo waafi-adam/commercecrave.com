@@ -21935,15 +21935,15 @@ Webflow.require('ix2').init(
 // ===============
 // HOVER VID REVEAL ON HERO SECTION
 const playButton = document.querySelector('.button-play');
-const projectImage = document.querySelector('.project-image')
+const projectImage = document.querySelector('.project-detail-hero-image')
 playButton.addEventListener('mouseover', vidThumbnailReveal, false);
 playButton.addEventListener('mouseout', vidThumbnailUnreveal, false);
 
 function vidThumbnailReveal(){
-  projectImage.classList.add('project-image-hide')
+  projectImage.classList.add('project-detail-hero-image-hide')
 }
 function vidThumbnailUnreveal(){
-  projectImage.classList.remove('project-image-hide')
+  projectImage.classList.remove('project-detail-hero-image-hide')
 }
 
 // POP UP MODAL OF THE VIDEO BRIEF
