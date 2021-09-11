@@ -1,0 +1,104 @@
+<style>
+  .video-section-container{
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    display: none;
+  }
+  .video-section-container.active{
+    display: block;
+  }
+  .close-button{
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(235, 235, 235);
+    font-size: 2rem;
+  }
+  .video-section-vid{
+    width: 100%;
+    padding-bottom:  56.25%;
+    position: relative;
+  }
+  .portfolio-vid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+#overlay-video{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+#overlay-video.active{
+  opacity: 1;
+  pointer-events: all;
+}
+</style>
+<!-- CSS END -->
+<!-- HTML -->
+<button data-modal-target="#modal" class="button-flex">
+  <a class="button-play w-button">
+    Watch Project Summary
+  </a>
+</button>
+<div id="modal" class="video-section-container  modal">
+  <button data-close-button class="close-button">&times;</button>
+  <div class="video-section-vid">
+    <iframe class="portfolio-vid" src="https://www.youtube.com/embed/lIS_bvEztgI?rel=0;&autoplay=1;;&loop=1" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</div>
+<div  id="overlay-video"></div>
+<!-- HTML END -->
+<!-- JS -->
+<script>
+  const openModalButtons = document.querySelectorAll('[data-modal-target]')
+  const closeModalButtons = document.querySelectorAll('[data-close-button]')
+  const overlay = document.getElementById('overlay-video')
+
+  openModalButtons.forEach(button => {
+    button.addEventListener('click',() => {
+      const modal = document.querySelector(button.dataset.modalTarget)
+      openModal(modal)
+    })
+  })
+
+  overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+      closeModal(modal)
+    })
+  })
+
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click',() => {
+      const modal = button.closest('.modal')
+      closeModal(modal)
+    })
+  })
+
+  function openModal(modal){
+    if (modal == null) return
+    modal.classList.add('active')
+    overlay.classList.add('active')
+  }
+
+  function closeModal(modal){
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+  }
+</script>
+<!-- JS END -->
