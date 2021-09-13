@@ -234,7 +234,7 @@ li {
 blockquote {
   margin-bottom: 10px;
   padding: 0px 20px;
-  border-left: 3px solid #4830e6;
+  border-left: 3px solid #fff;
   font-family: Roboto, sans-serif;
   color: #000;
   font-size: 34px;
@@ -3258,6 +3258,13 @@ figure {
   position: relative;
   min-height: 520px;
 }
+.video-background-mobile {
+  position: relative;
+  min-height: 520px;
+  margin: 20px 0;
+  display: none;
+  
+}
 
 .background-video {
   position: absolute;
@@ -4777,6 +4784,7 @@ figure {
   font-size: 32px;
   line-height: 37px;
   font-weight: 500;
+  /* border-left: #fff; */
 }
 
 .label-wrapper {
@@ -6860,6 +6868,9 @@ figure {
   .video-background {
     min-height: 340px;
   }
+  .video-background-mobile {
+    min-height: 340px;
+  }
 
   .tab-link {
     width: 100%;
@@ -7887,7 +7898,7 @@ UNIVERSAL
 }
 /* ACCORDIAN SERVICE SECTION */
 .faq {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow: hidden;
 }
 /* hide checkbox */
@@ -7896,23 +7907,31 @@ UNIVERSAL
 }
 /* style the label */
 .faq .question-label {
-  background-color: #FFF;
+  /* background-color: #FFF; */
+  border: 3px solid #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  /* padding: 1rem; */
+  padding: 20px 2rem;
   font-weight: bold;
-  color: #000;
+  /* color: #000; */
+  color: #fff;
   border-radius: 2rem;
   font-size: 1.2rem;
   /* width: fit-content; */
   transition: 0.3s;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 600;
 }
 .faq .question-label:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   transition: 0.3s;
+  color:#5130E4;
 }
 .faq .question-toggle:checked~.question-label {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .faq .question-label::after {
   content: '\276F';
@@ -7933,7 +7952,7 @@ UNIVERSAL
 }
 .faq .question-toggle:checked~.answer {
   max-height: 100vh;
-  padding: 1.2rem;
+  padding: 0 1.2rem 1.2rem 1.2rem;
 }
 /* SERVICE SECTION END */
 .bottom-left-square-parent{
@@ -7959,11 +7978,19 @@ UNIVERSAL
 .copywright-center{
   text-align: center;
 }
-
+.image-about-image-container {
+  /* height: 500px; */
+  /* -o-object-fit: cover; */
+  /* -o-object-position: center; */
+  display: none;
+}
 @media screen and (max-width: 1000px) {
   .about-photo-1,
   .about-photo-2 {
     display: none;
+  }
+  .image-about-image-container{
+    display: block;
   }
   .video-background{
     display: none;
@@ -7972,10 +7999,22 @@ UNIVERSAL
   .mobile-video-syaafi{
     display: block;
   }
+  .container{
+    width: 80%;
+  }
+  .video-background-mobile{
+    display: block;
+  }
+  .about-text-container {
+    max-width: 600px;
+  }
 }
 @media screen and (max-width: 600px) {
   .hero-text{
     font-size: 60px;
+  }
+  .container{
+    width: 90%;
   }
 }
 @media screen and (max-width: 500px) {
