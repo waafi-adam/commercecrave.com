@@ -7816,6 +7816,11 @@ UNIVERSAL
 .email-link{
   text-decoration: none;
 }
+/* sticky nav */
+.logo-icon{
+  width: 35px;
+  margin-right: 10px;
+}
 /* =============
  HOME PAGE
  ================ */
