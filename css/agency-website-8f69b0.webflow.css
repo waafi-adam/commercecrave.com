@@ -1275,6 +1275,7 @@ figure {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 200px;
 }
 
 .service-wrapper.second {
@@ -3216,7 +3217,7 @@ figure {
   display: flex;
   margin-right: 15px;
   margin-bottom: 15px;
-  padding: 9px 24px;
+  padding: 9px 20px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -6058,6 +6059,7 @@ figure {
     grid-row-gap: 30px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    max-width: fit-content;
   }
 
   .services-grid._80 {
@@ -6862,7 +6864,7 @@ figure {
   }
 
   .features-wrapper {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 
   .video-background {
@@ -7821,6 +7823,8 @@ UNIVERSAL
   width: 35px;
   margin-right: 10px;
 }
+
+
 /* =============
  HOME PAGE
  ================ */
@@ -7989,6 +7993,24 @@ UNIVERSAL
   /* -o-object-position: center; */
   display: none;
 }
+/* project section */
+
+.project-section-bg{
+  background-color:#5130E4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  transform: translateY(-210px);
+}
+.project-detail-box {
+  background: #fff;
+  transform: translateY(-10px);
+  padding: 10px 20px;
+  margin-top: 0;
+  width: 100%;
+  /* display: none; */
+}
 @media screen and (max-width: 1000px) {
   .about-photo-1,
   .about-photo-2 {
@@ -8045,6 +8067,10 @@ UNIVERSAL
   .mobile-video-waafi {
     width: 15rem;
     height: 15rem;
+  }
+  .secondary-text-mobile {
+    font-size: 1.3rem;
+    line-height: 1.3;
   }
 }
 @media screen and (max-width: 300px) {
