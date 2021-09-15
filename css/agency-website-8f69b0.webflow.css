@@ -8136,6 +8136,9 @@ UNIVERSAL
   overflow: hidden;
 }
 /* VIDEO POP UP*/
+  .unscrollable{
+    overflow: hidden;
+  }
   .video-section-container {
     max-width: 900px;
     width: 90%;
@@ -8146,6 +8149,7 @@ UNIVERSAL
     transform: translate(-50%, -50%);
     z-index: 20000;
     display: none;
+    /* position: sticky; */
   }
 
   .video-section-container.active {
