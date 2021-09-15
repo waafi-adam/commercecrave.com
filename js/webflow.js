@@ -21929,6 +21929,23 @@ Webflow.require('ix2').init(
 
 
 // ======== CUSTOMIZATION =========
+// ==========
+// UNIVERSAL
+// ===========
+// ANIMATION ON SCROLL
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animation-done');
+      }
+    });
+  });
+
+  const animationWaitElements = document.querySelectorAll('.animation-wait');
+animationWaitElements.forEach((animationWaitElement) => {
+  observer.observe(animationWaitElement)
+})
+
 
 // ===============
 // PROJECT PAGE
@@ -21987,3 +22004,4 @@ function closeModal(modal) {
   overlay.classList.remove('active')
   portfolioVid[0].pause();
 }
+
