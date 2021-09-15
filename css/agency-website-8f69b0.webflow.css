@@ -1254,7 +1254,7 @@ figure {
 }
 
 .services-grid._80 {
-  width: 80%;
+  width: fit-content;
   margin-right: auto;
   margin-left: auto;
 }
@@ -6063,7 +6063,7 @@ figure {
   }
 
   .services-grid._80 {
-    width: 100%;
+    width: fit-content!important;
     grid-row-gap: 40px;
   }
 
