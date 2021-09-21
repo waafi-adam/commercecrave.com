@@ -8739,13 +8739,11 @@ UNIVERSAL
     z-index: 20000;
     display: none;
     /* position: sticky; */
-  }
-
-  .video-section-container.active {
     display: block;
+
   }
 
-  .close-button {
+  .close-modal-button {
     background: none;
     outline: none;
     border: none;
@@ -8767,20 +8765,16 @@ UNIVERSAL
 
   #overlay-video {
     position: fixed;
-    opacity: 0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
     z-index: 10000;
-  }
-
-  #overlay-video.active {
     opacity: 1;
     pointer-events: all;
   }
+
 /* ADJUST PLAY BUTTON SIZE ON SMALLER DEVICE */
 @media screen and (max-width: 300px) {
   .button-play {
