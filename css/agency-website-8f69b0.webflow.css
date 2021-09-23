@@ -1494,8 +1494,8 @@ figure {
 }
 
 .sticky-nav {
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky; */
+  position: sticky !important;
   top: 0px;
   z-index: 9999;
 }
@@ -8002,9 +8002,9 @@ UNIVERSAL
  ================ */
 
  /* HERO RIGHT CONTENT */
- .page-content {
+ /* .page-content {
    overflow: hidden;
- }
+ } */
 
  .remove-hidden {
    overflow: visible;
