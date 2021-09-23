@@ -21926,6 +21926,87 @@ Webflow.require('ix2').init(
 );
 
 
+// TRANSTION HERO RIGHT
+
+// pic 1
+var current1 = 0,
+    slides1 = document.querySelectorAll(".pic-1");
+
+setInterval(function() {
+  for (var i = 0; i < slides1.length; i++) {
+    slides1[i].style.opacity = 0;
+  }
+  current1 = (current1 != slides1.length - 1) ? current1 + 1 : 0;
+  slides1[current1].style.opacity = 1;
+}, 5000);
+// pic 1 end
+
+// pic 2
+var current2 = 0,
+    slides2 = document.querySelectorAll(".pic-2");
+
+setInterval(function() {
+  for (var i = 0; i < slides2.length; i++) {
+    slides2[i].style.opacity = 0;
+  }
+  current2 = (current2 != slides2.length - 1) ? current2 + 1 : 0;
+  slides2[current2].style.opacity = 1;
+}, 5000);
+// pic 2 end
+
+// pic 3
+var current3 = 0,
+    slide3 = document.querySelectorAll(".pic-3");
+
+setInterval(function() {
+  for (var i = 0; i < slide3.length; i++) {
+    slide3[i].style.opacity = 0;
+  }
+  current3 = (current3 != slide3.length - 1) ? current3 + 1 : 0;
+  slide3[current3].style.opacity = 1;
+}, 5000);
+// pic 3 end
+
+// pic 4
+var current4 = 0,
+    slides4 = document.querySelectorAll(".pic-4");
+
+setInterval(function() {
+  for (var i = 0; i < slides4.length; i++) {
+    slides4[i].style.opacity = 0;
+  }
+  current4 = (current4 != slides4.length - 1) ? current4 + 1 : 0;
+  slides4[current4].style.opacity = 1;
+}, 5000);
+// pic 4 end
+
+// pic 5
+var current5 = 0,
+    slides5 = document.querySelectorAll(".pic-5");
+
+setInterval(function() {
+  for (var i = 0; i < slides5.length; i++) {
+    slides5[i].style.opacity = 0;
+  }
+  current5 = (current5 != slides5.length - 1) ? current5 + 1 : 0;
+  slides5[current5].style.opacity = 1;
+}, 5000);
+// pic 5 end
+
+// pic 6
+var current6 = 0,
+    slides6 = document.querySelectorAll(".pic-6");
+
+setInterval(function() {
+  for (var i = 0; i < slides6.length; i++) {
+    slides6[i].style.opacity = 0;
+  }
+  current6 = (current6 != slides6.length - 1) ? current6 + 1 : 0;
+  slides6[current6].style.opacity = 1;
+}, 5000);
+// pic 6 end
+
+// TRANSTION HERO RIGHT END
 
 
 // ======== CUSTOMIZATION =========
@@ -21964,5 +22045,4 @@ function vidThumbnailUnreveal(){
 }
 
 // POP UP MODAL OF THE VIDEO BRIEF
-
 

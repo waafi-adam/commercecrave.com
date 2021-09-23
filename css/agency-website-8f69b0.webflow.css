@@ -8085,6 +8085,12 @@ UNIVERSAL
  .hero-pic-4 {
    width: 300px;
  }
+ .hero-pic-4-ratio{
+   width: 100%;
+   padding-bottom: 206%;
+   background: url('/images/hero-pic-caringPair-4.png');
+   background-size: cover;
+ }
 
  .hero-pic-5 {
    width: 190px;
@@ -8106,9 +8112,59 @@ UNIVERSAL
  .hero-pic-2,
  .hero-pic-3,
  .hero-pic-5,
+ .hero-pic-4,
  .hero-pic-6 {
    box-shadow: 3px 3px 10px rgba(34, 34, 34, 0.445);
+   overflow: hidden;
+   position: relative;
  }
+ .hero-pic-4{
+   box-shadow: none;
+ }
+
+.pic-1,
+.pic-2,
+.pic-3,
+.pic-4,
+.pic-5,
+.pic-6{
+  position: absolute;
+  bottom: 0;
+  transition: opacity .5s ease-in;
+}
+.pic-1_1,
+.pic-2_1,
+.pic-3_1,
+.pic-4_1,
+.pic-5_1,
+.pic-6_1{
+  z-index: 10;
+  opacity: 0;
+}
+.pic-1_2,
+.pic-2_2,
+.pic-3_2,
+.pic-4_2,
+.pic-5_2,
+.pic-6_2 {
+  z-index: 9;
+}
+.pic-1_3,
+.pic-2_3,
+.pic-3_3,
+.pic-4_3,
+.pic-5_3,
+.pic-6_3 {
+  z-index: 8;
+}
+.pic-1 + .pic-1,
+.pic-2 + .pic-2,
+.pic-3 + .pic-3,
+.pic-4 + .pic-4,
+.pic-5 + .pic-5,
+.pic-6 + .pic-6{
+  opacity: 0;
+}
 
  @media screen and (max-width: 1520px) {
 
