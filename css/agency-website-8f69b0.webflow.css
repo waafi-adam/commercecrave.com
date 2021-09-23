@@ -8023,10 +8023,6 @@ UNIVERSAL
    display: inline-block;
  }
 
- .hero-left {
-   min-width: 600px;
- }
-
  .hero-right {
    z-index: 20;
    position: absolute;
