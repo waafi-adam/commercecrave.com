@@ -8833,3 +8833,15 @@ UNIVERSAL
     font-size: 10px;
   }
 }
+
+/* SERVICE SECTION CHANGE FOR 2 SERVICE */
+.service-flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .service-flex-container{
+    flex-direction: column;
+  }
+}
