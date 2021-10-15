@@ -22006,6 +22006,19 @@ setInterval(function() {
 }, 5000);
 // pic 6 end
 
+// pic bg
+var currentBG = 0,
+    slidesBG = document.querySelectorAll(".hero-bg");
+
+setInterval(function() {
+  for (var i = 0; i < slidesBG.length; i++) {
+    slidesBG[i].style.opacity = 0;
+  }
+  currentBG = (currentBG != slidesBG.length - 1) ? currentBG + 1 : 0;
+  slidesBG[currentBG].style.opacity = 1;
+}, 5000);
+// pic bg end
+
 // TRANSTION HERO RIGHT END
 
 

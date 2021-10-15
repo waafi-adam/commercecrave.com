@@ -8001,11 +8001,33 @@ UNIVERSAL
  HOME PAGE
  ================ */
 
- /* HERO RIGHT CONTENT */
- /* .page-content {
-   overflow: hidden;
- } */
+/* HERO SECTION BG IMAGE DYNAMIC */
+.hero-bg-img-1,
+.hero-bg-img-2,
+.hero-bg-img-3 {
+  position: absolute;
+}
+.hero-bg-img-1{
+  z-index: 3;
+  opacity: 0;
+}
+.hero-bg-img-2 {
+  z-index: 2;
+}
+.hero-bg-img-3 {
+  z-index: 1;
+}
+.video-wrapper > .overlay{
+  z-index: 4;
+}
+.hero-bg + .hero-bg{
+  opacity: 0;
+}
+.hero-bg{
+  transition: opacity .5s ease-in;
+}
 
+ /* HERO RIGHT CONTENT*/
  .remove-hidden {
    overflow: visible;
  }
