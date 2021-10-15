@@ -8026,6 +8026,10 @@ UNIVERSAL
 .hero-bg{
   transition: opacity .5s ease-in;
 }
+.hero-bg-img-1-fix {
+  z-index: .5;
+  opacity: 1;
+}
 
  /* HERO RIGHT CONTENT*/
  .remove-hidden {
